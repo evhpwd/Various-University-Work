@@ -1,3 +1,3 @@
-COMP211 (COMPUTER NETWORKS) - Assignment 1
+COMP211 (COMPUTER NETWORKS) - Assignment 1 Mail Client
 
 Implementing a mail client that sends mail to other users.
