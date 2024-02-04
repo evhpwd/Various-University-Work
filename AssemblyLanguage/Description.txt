@@ -1,0 +1,3 @@
+COMP124 COMPUTER SYSTEMS - Assignment 1 Assembly Language Programming
+
+Assembly program that takes number inputs from the user and returns the number of positive, negative and zero values.
