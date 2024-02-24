@@ -1,3 +1,6 @@
+Overall Info:
+These are a few different short C programs for my C and Memory Management module. Libraries other than stdio.h are not permitted and input is assumed given by file/directly without newline characters added by console.
+
 Part 1:
 
 Purpose - Takes a start and end radius then sums up areas and circumferences of a series of circles with radii.
