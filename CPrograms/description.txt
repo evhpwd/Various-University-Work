@@ -1,0 +1,56 @@
+Part 1:
+
+Purpose - Takes a start and end radius then sums up areas and circumferences of a series of circles with radii.
+
+Algorithm -
+I defined PI as a constant equal to 3.14.
+
+I took an iterative approach with a while loop that repeats until the current radius is equal to radius2, incrementing by 1 each time. The areas and circumferences are calculated using PI and added to the totals each iteration.
+
+The printf statement uses flags to limit the results to 3 decimal places and prints each on a separate line.
+
+Part 2:
+
+Purpose - Reads a sequence of ASCII characters and returns the number of English characters, numbers, spaces and other characters.
+
+Algorithm -
+I used a while loop that loops until scanf returns EOF.
+
+Each iteration, a character is read into a variable and compared to ASCII characters to determine what type it belongs to. The appropriate count is then incremented.
+
+Part 3:
+
+Purpose - Reads a string and outputs the reversal of it.
+
+Algorithm -
+I first defined a function to return the length of a string, named ‘mystrlen’. It takes a pointer to the first address of an array of characters, iterates until an ‘empty’ value is reached, incrementing a count per iteration. Finally, it returns the count, which will be the number of values in the array.
+
+The main function reads the input using fgets - to preserve spaces and read the entire string as one - storing it in a character array. Then, the length is calculated using the ‘mystrlen’ function. If the length is 1, it returns the string as it doesn’t need reversing. Otherwise, it will iterate up to the value in the array preceding the halfway point. E.g.
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9] has length 10
+10 / 2 = 5
+So it will iterate up to the 4th index, which is 4.
+If the array has an odd length, it will iterate up to the value before the centre.
+
+Each iteration, it swaps the values from the current index and the index equidistant from the end of the array. So, the first value will be swapped with the last, the second will be swapped with the second last, and so on.
+
+Part 4:
+
+Purpose - Reads 3 integers, a b n. Finds the digit at place n after the decimal point of a/b.
+
+Algorithm -
+An initial remainder value is calculated from the modulus of a and b. Then, a for loop iterates up to n-1. Each iteration, the remainder is updated with the next via multiplying by 10 and finding the modulus of the new value and b. If the remainder is 0 at any point, the loop will stop since there is no reason to continue iterating.
+
+After the loop, the integer quotient will be calculated from the current remainder multiplied by 10 divided by b and returned.
+
+Part 5:
+
+Purpose - Takes 10 integers, finds the lowest absolute value and swaps it with the last value.
+
+Algorithm -
+I defined the length of the input as a constant to use throughout the code as it would make it easy to change if needed and understand the meaning of the number where it is used.
+
+The input is read in iteratively with scanf since it is beneficial that it stops at whitespace for this problem. The current value is stored in an array and a variable named ‘current_num’. If it is a negative value, the ‘current_num’ value is converted to positive to represent the absolute value. There are variables to store the lowest absolute value and the address of this value in the array, which are initialised with the first input.
+
+Each iteration, the absolute current value is checked against the absolute minimum value. If the current is smaller, the minimum absolute and address variables are updated.
+
+Afterwards, the values at the last and minimum addresses are swapped in the array before it is printed with a for loop.
