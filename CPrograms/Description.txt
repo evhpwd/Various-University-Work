@@ -3,7 +3,7 @@ These are a few different short C programs for my C and Memory Management module
 
 Part 1:
 
-Purpose - Takes a start and end radius then sums up areas and circumferences of a series of circles with radii.
+Purpose - Takes a start and end radius then sums up areas and circumferences of a series of circles with radii from one to the other.
 
 Algorithm -
 I defined PI as a constant equal to 3.14.
